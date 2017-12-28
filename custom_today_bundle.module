@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * Implements hook_secure_permissions().
+ *
+ * Adding permissions for Today.
+ */
+function custom_today_bundle_secure_permissions($role) {
+  $permissions = array(
+    'content_editor' => array(
+      'add_terms_byline',
+      'add_terms_category',
+      'add_terms_department',
+      'add_terms_newsletter',
+      'add_terms_people_filter_1',
+      'add_terms_people_filter_2',
+      'add_terms_people_filter_3',
+      'add_terms_person_type',
+      'add_terms_syndication_unit',
+    ),
+    'site_owner' => array(
+      'add_terms_byline',
+      'add_terms_category',
+      'add_terms_department',
+      'add_terms_newsletter',
+      'add_terms_people_filter_1',
+      'add_terms_people_filter_2',
+      'add_terms_people_filter_3',
+      'add_terms_person_type',
+      'add_terms_syndication_unit',
+    ),
+    'administrator' => array(
+      'add_terms_byline',
+      'add_terms_category',
+      'add_terms_department',
+      'add_terms_legacy_audience',
+      'add_terms_legacy_college_school',
+      'add_terms_legacy_topic',
+      'add_terms_media',
+      'add_terms_newsletter',
+      'add_terms_people_filter_1',
+      'add_terms_people_filter_2',
+      'add_terms_people_filter_3',
+      'add_terms_person_type',
+      'add_terms_syndication_audience',
+      'add_terms_syndication_unit',
+      'add_terms_tags',
+      'edit disabled taxonomies'
+    ),
+    'developer' => array(
+      'add_terms_byline',
+      'add_terms_category',
+      'add_terms_department',
+      'add_terms_legacy_audience',
+      'add_terms_legacy_college_school',
+      'add_terms_legacy_topic',
+      'add_terms_media',
+      'add_terms_newsletter',
+      'add_terms_people_filter_1',
+      'add_terms_people_filter_2',
+      'add_terms_people_filter_3',
+      'add_terms_person_type',
+      'add_terms_syndication_audience',
+      'add_terms_syndication_unit',
+      'add_terms_tags',
+      'edit disabled taxonomies'
+    )
+  );
+
+  if (isset($permissions[$role])) {
+    return $permissions[$role];
+  }
+}
