@@ -12,10 +12,10 @@ Feature: Taxonomy Edit Disable
 
         Examples:
             | role            | message                 |
-            | edit_my_content | "Access Denied"         |
-            | edit_only       | "Access Denied"         |
-            | content_editor  | "Access Denied"         |
-            | site_owner      | "Access Denied"         |
+            | edit_my_content | "Access denied"         |
+            | edit_only       | "Access denied"         |
+            | content_editor  | "Access denied"         |
+            | site_owner      | "Access denied"         |
             | administrator   | "Taxonomy Edit Disable" |
             | developer       | "Taxonomy Edit Disable" |
 
