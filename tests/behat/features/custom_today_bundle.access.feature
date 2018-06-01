@@ -13,7 +13,6 @@ Feature: Taxonomy Edit Disable
         Examples:
             | role            | message                 |
             | edit_my_content | "Access denied"         |
-            | edit_only       | "Access denied"         |
             | content_editor  | "Access denied"         |
             | site_owner      | "Access denied"         |
             | administrator   | "Taxonomy Edit Disable" |
